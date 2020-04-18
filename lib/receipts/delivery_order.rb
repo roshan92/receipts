@@ -67,10 +67,10 @@ module Receipts
         # Cache the Y value so we can have both boxes at the same height
         top = y
         bounding_box([0, y], width: 200) do
-          label "BILL TO"
+          label "SHIP TO"
 
           move_down 5
-          text_box bill_to, at: [0, cursor], width: 200, height: 75, inline_format: true, size: 10, leading: 4, overflow: :shrink_to_fit
+          text_box ship_to, at: [0, cursor], width: 200, height: 75, inline_format: true, size: 10, leading: 4, overflow: :shrink_to_fit
 
         end
 
