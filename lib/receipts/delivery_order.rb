@@ -56,7 +56,7 @@ module Receipts
         if logo_path.empty?
           move_down 32
         else
-          image open(logo_path), height: 32
+          image logo_path, height: 32
         end
 
         move_down 8
