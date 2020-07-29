@@ -26,7 +26,7 @@ module Receipts
     private
 
       def default_message
-        "For questions, contact us anytime at <color rgb='326d92'><link href='mailto:#{company.fetch(:email)}?subject=Invoice ##{id}'><b>#{company.fetch(:email)}</b></link></color>."
+        "For questions, please contact merchant at <color rgb='326d92'><link href='mailto:#{company.fetch(:email)}?subject=Charge ##{id}'><b>#{company.fetch(:email)}</b></link></color> or <b>#{company.fetch(:phone)}</b>"
       end
 
       def default_subheading
